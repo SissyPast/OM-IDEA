@@ -1,0 +1,7 @@
+#!/bin/bash
+
+uv run sphinx-autobuild -a -E docs/source docs/_build/html \
+    --watch om_idea/ \
+    --ignore "docs/source/_inventories/**" \
+    --ignore "docs/source/docs/api_reference/_api/**" \
+    --ignore "**/__pycache__/**"
